@@ -3,7 +3,7 @@ Final project for AIDI 1002 – out-of-scope-intent-detection-project
 Group Members: Laya & Prasanna
 Semester: Fall 2025
 
-Project Summary
+## Project Summary
 
 This project reproduces the research paper on Out-of-Scope (OOS) Intent Detection using Contrastive Learning and BERT.
 We successfully:
@@ -14,25 +14,25 @@ Reproduced the original model training process (BERT + contrastive loss)
 
 Evaluated model performance on validation and test sets
 
-  Our Contribution (Required for Assignment)
+### Our Contribution
 
 We added a new model for experimentation:
 
-We extracted sentence embeddings (CLS token) from the trained BERT encoder and trained a Logistic Regression classifier to compare performance.
+- We extracted sentence embeddings (CLS token) from the trained BERT encoder and trained a Logistic Regression classifier to compare performance.
 
 This provides insight into how well a linear classifier performs using pretrained BERT embeddings.
 
-Logistic Regression Accuracy:
+#### Logistic Regression Accuracy:
 
 ~70% on the test set
 
-Repository Structure
+### Repository Structure
 /src              – Original training and model files
 /embeddings       – Contribution experiment (Logistic Regression)
 /report           – Final project notebook and PDF
 README.md
 
-Dataset
+### Dataset
 
 We used the same dataset included in the original paper’s repository (positive intents + OOS samples).
 Data loading is handled automatically by the dataloader.
@@ -45,7 +45,7 @@ This trains the BERT encoder and saves a checkpoint.
 
 Note: The trained .pth model is large and stored separately in Google Drive.
 
-Model Checkpoint (Download)
+**Model Checkpoint**
 
 Because GitHub has file size limits, download:
 
@@ -57,7 +57,7 @@ Place inside:
 
 /model
 
-Running Our Contribution
+### Running Our Contribution
 
 Open the notebook:
 
@@ -66,15 +66,15 @@ logistic_regression_experiment.ipynb
 
 Run all cells to:
 
-Load trained encoder
+- Load trained encoder
 
-Extract embeddings
+- Extract embeddings
 
-Train logistic regression
+- Train logistic regression
 
-Evaluate accuracy
+- Evaluate accuracy
 
-Results Summary
+### Results Summary
 
 Reproduced original method successfully
 
