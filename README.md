@@ -1,2 +1,2 @@
 # AIDI1002_Final_Project_GroupX_Laya_Prasanna
-Final project for AIDI 1002 – open intent / OOS detection for dialogue intents
+Final project for AIDI 1002 – out-of-scope-intent-detection-project
